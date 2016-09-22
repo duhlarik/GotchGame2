@@ -696,7 +696,9 @@ public class HomeController {
 
 	@RequestMapping(value = "gamecreation", method = RequestMethod.GET)
 	public String processAssignment(HttpServletRequest request,
-			HttpServletResponse response, Model model) {
+			HttpServletResponse response, Model model, HttpSession session) {
+		
+		System.out.println("Are we getting here?");
 		/*
 		 * This is our game creation page. Once the user clicks create game,
 		 * enters gamename and date information. This will get stored in
@@ -705,20 +707,18 @@ public class HomeController {
 		 * inviteplayerpage.
 		 */
 		try {
-			HttpSession session = request.getSession();
-			String gamename = request.getParameter("gamename");
-			session.setAttribute("gamename", gamename);
-			String startDate = request.getParameter("startdate");
-			String endDate = request.getParameter("enddate");
+			System.out.println("Are we getting here?");
+			String gamenamecreated = request.getParameter("gamename");
+			session.setAttribute("gamename", gamenamecreated);
+			System.out.println("what is the gamename showing as?" + gamenamecreated);
 
 			String userNameSession = (String) session
 					.getAttribute("userNameSession");
 			// String gameMakerUserName = request.getParameter("gamecreatedby");
 			// Object value = request.getSession().getAttribute("username");
 			// String gameMakerUserName = (String) value;
-			model.addAttribute("gamename", gamename);
-			model.addAttribute("startDate", startDate);
-			model.addAttribute("endDate", endDate);
+			//model.addAttribute("gamename", gamename);
+			
 
 			Class.forName("com.mysql.jdbc.Driver");
 			// the connection is an example of the factory design pattern
@@ -733,21 +733,21 @@ public class HomeController {
 
 			java.sql.PreparedStatement updateGame = conn
 					.prepareStatement(query1);
-			updateGame.setString(1, gamename);
+			updateGame.setString(1, gamenamecreated);
 			updateGame.setString(2, userNameSession);
 			updateGame.setString(3, "inactive");
 			updateGame.execute();
 
 			query1 = "INSERT INTO playertable1"
-					+ "(PlayerNumber,UserId,GameName,PlayerStatus) VALUES"
-					+ "(?,?,?,?)";
+					+ "(UserId,GameName,PlayerStatus) VALUES"
+					+ "(?,?,?)";
 
 			java.sql.PreparedStatement addPlayerToPlayersTable = conn
 					.prepareStatement(query1);
-			addPlayerToPlayersTable.setInt(1, 1);
-			addPlayerToPlayersTable.setString(2, userNameSession);
-			addPlayerToPlayersTable.setString(3, gamename);
-			addPlayerToPlayersTable.setString(4, "active");
+			
+			addPlayerToPlayersTable.setString(1, userNameSession);
+			addPlayerToPlayersTable.setString(2, gamenamecreated);
+			addPlayerToPlayersTable.setString(3, "active");
 			addPlayerToPlayersTable.execute();
 
 		} catch (Exception e) {
@@ -964,7 +964,7 @@ public class HomeController {
 				// process the results
 				ResultSet rs = ps.executeQuery();
 
-				String gameName = " ";
+				String gameName = "";
 
 				while (rs.next()) {
 					gameName = rs.getString(1);
