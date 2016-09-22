@@ -157,7 +157,7 @@ html, body {
   transition: flex 0.4s, -webkit-box-flex 0.4s, -webkit-flex 0.4s, -ms-flex 0.4s;
 }
 .container .section:hover > .cont_title h1 {
-  font-size: 10vw;
+  font-size: 8vw;
   -webkit-transition: font-size 0.4s;
   transition: font-size 0.4s;
 }
