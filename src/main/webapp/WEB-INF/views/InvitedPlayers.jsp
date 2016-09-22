@@ -23,7 +23,7 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/2fd91412db.png")
+{background-image: url("https://i.imgsafe.org/43090ea775.jpg")
 
 
 }
@@ -67,10 +67,10 @@ li a:hover {
 <h3>Game Invitations</h3>
 
 
-</header>
+<!-- </header>
 
 
-</header>
+</header> -->
 <h1> ${gameName}   </h1>
 <h1> ${invitedPlayers [1]} </h1><br>
 <form action= "addPlayer" method ="get">

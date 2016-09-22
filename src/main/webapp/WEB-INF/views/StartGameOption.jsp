@@ -23,7 +23,7 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/2fd91412db.png")
+{background-image: url("https://i.imgsafe.org/4309152fef.jpg")
 
 
 }
@@ -61,14 +61,14 @@ li a:hover {
 <body>
 
 
-<header>
+<!-- <header>
 
 <h1>Gotcha!</h1>
 <h3>Start Game</h3>
 
 </header>
 
-</header>
+</header> -->
 
 <h1>${StartGame} </h1>
 <form action= "StartGameButton" method ="get">

@@ -12,8 +12,13 @@
   <link href="${mainCss}"  rel="stylesheet"/>
  
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+body
+{background-image: url("https://i.imgsafe.org/4309027e65.jpg")}
+</style>
  </head>
 <body>
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
