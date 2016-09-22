@@ -22,7 +22,7 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/2fd91412db.png")
+{background-image: url("https://i.imgsafe.org/43090ea775.jpg")
 
 
 }
@@ -66,12 +66,12 @@ li a:hover {
 <h3>Game Invitations</h3>
 
 
-</header>
+<!-- </header>
 
 
 
 
-</header>
+</header> -->
 <h1>You have no pending Invitations. Why not start a new Game?</h1>
 
 <form action= "GotchaGamesCreateGame" method ="get">

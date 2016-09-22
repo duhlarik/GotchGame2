@@ -50,7 +50,7 @@ a.nounderline {
 </div> -->
 
 <div class="section two">
-	<a href="Loginpage" class="no-underline"><div
+	<a href="GotchaGamesCreateGame" class="no-underline"><div
 			class="mb_parallax_container" id="mb_parallax_two">
 			<div class="mb_parallax_overlay" id="mb_parallax_overlay_two">
 			</div>
@@ -73,7 +73,7 @@ a.nounderline {
 </div> -->
 
 <div class="section three">
-	<a href="Loginpage" class="no-underline"><div
+	<a href="GameInvitationPage" class="no-underline"><div
 			class="mb_parallax_container" id="mb_parallax_three">
 			<div class="mb_parallax_overlay" id="mb_parallax_overlay_three">
 			</div>
@@ -96,7 +96,7 @@ a.nounderline {
 </div> -->
 
 <div class="section four">
-	<a href="Loginpage" class="no-underline"><div
+	<a href="StartGamePageTest" class="no-underline"><div
 			class="mb_parallax_container" id="mb_parallax_four">
 			<div class="mb_parallax_overlay" id="mb_parallax_overlay_four">
 			</div>
@@ -117,7 +117,7 @@ a.nounderline {
 		<h3>check for updates</h3></a> -->
 
 <div class="section five">
-	<a href="Loginpage" class="no-underline"><div
+	<a href="ActiveGameShowAssignment" class="no-underline"><div
 			class="mb_parallax_container" id="mb_parallax_five">
 			<div class="mb_parallax_overlay" id="mb_parallax_overlay_five">
 			</div>

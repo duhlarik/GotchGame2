@@ -23,7 +23,7 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/2fd91412db.png")
+{background-image: url("https://i.imgsafe.org/43090ea775.jpg")
 
 
 }
@@ -67,12 +67,12 @@ li a:hover {
 <h3>Game Invitations</h3>
 
 
-</header>
+<!-- </header>
 <ul>
 
 
 
-</header>
+</header> -->
 <h1> You have accepted a game invitation!</h1>
 <h3>You will see your assignment on the "Active Games"" Page when the Game Maker Starts the Game!</h3>
 

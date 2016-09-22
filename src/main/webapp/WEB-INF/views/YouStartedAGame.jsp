@@ -22,7 +22,7 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/2fd91412db.png")
+{background-image: url("https://i.imgsafe.org/4309152fef.jpg")
 
 
 }
@@ -82,10 +82,10 @@ li a:hover {
 
 </ul>
 
-</header>
+<%-- </header>
 <h1>You started your game ${gametostart}! </h1>
 <h3>You will see your assignment on the "Active Games" Page.  Let the Gotchaing begin!</h3>
-
+</header> --%>
 <ul>
 
 <li><form action="PrettyStart" method="get">

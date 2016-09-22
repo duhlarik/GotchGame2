@@ -24,7 +24,7 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/2fd91412db.png")
+{background-image: url("https://i.imgsafe.org/4308fc76a4.jpg")
 
 
 }
@@ -59,7 +59,7 @@ li a:hover {
 }
 </style>
 
-</header>
+<!-- </header> -->
 <p>
 <br>
 <br>

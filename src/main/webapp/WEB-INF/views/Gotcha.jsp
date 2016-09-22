@@ -22,7 +22,7 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/2fd91412db.png")
+{background-image: url("https://i.imgsafe.org/4309027e65.jpg")
 
 
 }
@@ -60,13 +60,13 @@ li a:hover {
 <body>
 
 
-<header>
+<!-- <header>
 
 <h1>Gotcha!</h1>
 <h3>Game Overview</h3>
 
 
-</header>
+</header> -->
 
 
 </header>

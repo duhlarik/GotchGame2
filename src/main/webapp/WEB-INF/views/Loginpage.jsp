@@ -31,7 +31,7 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/2fd91412db.png")
+{background-image: url("https://i.imgsafe.org/43122886ff.jpg")
 
 
 }
@@ -69,14 +69,14 @@ li a:hover {
 <body>
 
 
-	<header>
+	<!-- <header>
 
 		<h1>Gotcha!</h1>
 		<h3>Get or Be Got</h3>
 
 
 	</header>
-
+ -->
 
 	<br>
 	<br>
