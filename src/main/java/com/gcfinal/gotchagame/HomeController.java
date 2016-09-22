@@ -1,6 +1,5 @@
 package com.gcfinal.gotchagame;
 import java.io.StringReader;
-import java.io.StringReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -29,8 +28,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.context.request.SessionScope;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
@@ -155,15 +152,16 @@ public class HomeController {
 					
 					String userNameSession = request.getParameter("username");
 					model.addAttribute("username", userNameSession);
-					System.out.println(userNameSession);
+					
 					String password = request.getParameter("password");
 					System.out.println(password);
 					HttpSession session = request.getSession();
 					session.setAttribute("userNameSession", userNameSession);
-
+					System.out.println("The username for the session is:"  + userNameSession);
 					Class.forName("com.mysql.jdbc.Driver");
-					// This is connecting to our RDBS. Deeann is working on changing the
-					// password.
+					
+					
+					
 					/*
 					 * Connection conn = DriverManager.getConnection(
 					 * "jdbc:mysql://aaobnl8nl3m402.cmwzwe1wsipz.us-east-1.rds.amazonaws.com:3306/GameTestPlayerName"
@@ -730,16 +728,14 @@ public class HomeController {
 					"admin");
 
 			String query1 = "INSERT INTO gametable1"
-					+ "(GameName,StartDate,EndDate,GameMaker, GameStatus) VALUES"
-					+ "(?,?,?,?,?)";
+					+ "(GameName, GameMaker, GameStatus) VALUES"
+					+ "(?,?,?)";
 
 			java.sql.PreparedStatement updateGame = conn
 					.prepareStatement(query1);
 			updateGame.setString(1, gamename);
-			updateGame.setString(2, startDate);
-			updateGame.setString(3, endDate);
-			updateGame.setString(4, userNameSession);
-			updateGame.setString(5, "inactive");
+			updateGame.setString(2, userNameSession);
+			updateGame.setString(3, "inactive");
 			updateGame.execute();
 
 			query1 = "INSERT INTO playertable1"
@@ -848,7 +844,7 @@ public class HomeController {
 		return "InvitePlayersPage";
 	}
 
-
+/*WE ARE CURRENTLY USING START GAME PAGE TEST!
 	@RequestMapping(value = "StartGamePage", method = RequestMethod.GET)
 	public String playerClicksonStartGame(HttpServletRequest request,
 			HttpServletResponse response, Model model) {
@@ -929,12 +925,12 @@ public class HomeController {
 
 		}
 
-	}
+	}*/
 
 	@RequestMapping(value = "StartGamePageTest", method = RequestMethod.GET)
 	public String playerClicksonStartGameInNavigationBar(
 			HttpServletRequest request, HttpServletResponse response,
-			Model model) {
+			Model model, HttpSession session) {
 		// when player clicks on StartGamePage, this page will show a start Game
 		// option ONLY IF
 		// the session username is equal to a gamemaker name
@@ -946,10 +942,13 @@ public class HomeController {
 		{
 			String option = "";
 			try {// Step 1: game name associated with userNameSession
-
-				HttpSession session = request.getSession();
+				
 				String userNameSession = (String) session
 						.getAttribute("userNameSession");
+				
+				System.out.println(userNameSession);
+			
+				
 				Class.forName("com.mysql.jdbc.Driver");
 
 				Connection conn = DriverManager.getConnection(
@@ -972,7 +971,7 @@ public class HomeController {
 
 				}
 
-				model.addAttribute("gametostart", gameName);
+				System.out.println("This is a test! What is the gameName?" + gameName  );
 				session.setAttribute("gamethatwillbeupdatedtoactive", gameName);
 
 				// we will then see who the game maker is
