@@ -2,13 +2,10 @@
 <%@ page session="true" %>
 
 <html>
-
-
-
 <head>
    <title>Gotcha Game</title>
 
-    <meta name="Gotcha Game" content="An interactive game where players eliminate other players by getting them to hold a specified item at a specified location.  Users will be able to get their spy on and take out targets.  Instagram integration is used to create a running record of the games events.  Are you ready to get or be got?">
+<meta name="Gotcha Game" content="An interactive game where players eliminate other players by getting them to hold a specified item at a specified location.  Users will be able to get their spy on and take out targets.  Instagram integration is used to create a running record of the games events.  Are you ready to get or be got?">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,25 +15,25 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<style>
+<style>
 
-body
-{background-image: url("https://i.imgsafe.org/43122886ff.jpg")
-
-
+body {
+	background-image: url("https://i.imgsafe.org/43122886ff.jpg");
+	/*background-repeat: no-repeat;*/
+	background-position: center;
+	position: relative;
+	padding: 2%;
 }
 
-
+/* form {
+	text-align: center;} */
 
 p {
-padding:15% 15%;
-color: black;
-text-align: center;
-font-family: "courier new";
-font-size: 30px;
+	color: black;
+	text-align: center;
+	font-family: "courier new";
+	font-size: 14px;
 }
-
-
 
 li {
     float: left;
@@ -57,53 +54,27 @@ li a:hover {
 </style>
 </head>
 <body>
-
-
-<!-- <header>
-
-<h1>Gotcha!</h1>
-<h3>Get or Be Got</h3>
-
-
-</header> -->
-
-<li><form action="GameOverview" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Game Overview">
-
-	</form></li>
-      <li><form action="playerdashboard" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Player Dashboard">
-
-	</form></li>
-  <li><form action="GotchaGamesCreateGame" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Create Game">
-
-	</form></li>
-	
-  <li><form action="StartGamePage" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Start Created Game">
-
-	</form></li>
-  
-  <li><form action="Assignments" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Active Games">
-
-	</form></li> 
-
-  <li><form action="GameInvitations" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Game Invitations">
-
-	</form></li>
-	
-
-
-
+<form action="GameOverview" method="get">
+		 <input type="submit" value="Game Overview">
+	</form>
+<form action="playerdashboard" method="get">
+      <input type="submit" value="Player Dashboard">
+	</form>
+<form action="GotchaGamesCreateGame" method="get">
+		<input type="submit" value="Create Game">
+	</form>
+<form action="StartGamePage" method="get">
+		<input type="submit" value="Start Created Game">
+	</form>
+<form action="Assignments" method="get">
+		<input type="submit" value="Active Games">
+	</form>
+<form action="GameInvitations" method="get">
+		<input type="submit" value="Game Invitations">
+	</form>
+<form action="PrettyStart" method="get">
+		<input type="submit" value="Home">
+	</form>
 <p>
 Last Updated: September 2016
 
@@ -201,11 +172,6 @@ By clicking “Submit” I agree that:
 
 I have read and accepted the User Agreement and Privacy Policy.
 I am at least 18 years old.
-
-
 </p>
-
-
 </body>
-
 </html>

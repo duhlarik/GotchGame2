@@ -4,13 +4,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-
-
-
 <head>
 	   <title>Gotcha Game</title>
 
-    <meta name="Gotcha Game" content="An interactive game where players eliminate other players by getting them to hold a specified item at a specified location.  Users will be able to get their spy on and take out targets.  Instagram integration is used to create a running record of the games events.  Are you ready to get or be got?">
+<meta name="Gotcha Game" content="An interactive game where players eliminate other players by getting them to hold a specified item at a specified location.  Users will be able to get their spy on and take out targets.  Instagram integration is used to create a running record of the games events.  Are you ready to get or be got?">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -20,25 +17,25 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<style>
+<style>
 
-body
-{background-image: url("https://i.imgsafe.org/43090ea775.jpg")
-
-
+body {
+	background-image: url("https://i.imgsafe.org/43090ea775.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	padding: 2%;
 }
 
-
+form {
+	text-align: center;}
 
 p {
-padding:15% 15%;
-color: black;
-text-align: center;
-font-family: "courier new";
-font-size: 30px;
+	color: black;
+	text-align: center;
+	font-family: "courier new";
+	font-size: 28px;
 }
-
-
 
 li {
     float: left;
@@ -59,32 +56,11 @@ li a:hover {
 </style>
 </head>
 <body>
+<p><b> You have accepted a game invitation!</b>
+<h3>You will see your assignment on the "Active Games"" Page<br> when the Game Maker Starts the Game!</h3><p>
 
-<!-- 
-<header>
-
-<h1>Gotcha!</h1>
-<h3>Game Invitations</h3>
-
-
-</header>
-<ul>
-
-
-
-</header> -->
-<h1> You have accepted a game invitation!</h1>
-<h3>You will see your assignment on the "Active Games"" Page when the Game Maker Starts the Game!</h3>
-
-
-<form action="PrettyStart" method="get" align = "middle">
-<input type="submit" align="center" value="Home">
-
-	</form>
-    
-
-
-
+<form action="PrettyStart" method="get">
+<input type="submit" value="Home">
+</form>
 </body>
-
 </html>
