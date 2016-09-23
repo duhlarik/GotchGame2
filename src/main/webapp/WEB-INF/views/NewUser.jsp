@@ -2,9 +2,6 @@
 <%@ page session="true"%>
 
 <html>
-
-
-
 <head>
 <title>Gotcha Game</title>
 
@@ -30,25 +27,25 @@
 
 	<style>
 
-body
-{background-image: url("https://i.imgsafe.org/43122886ff.jpg")
-
-
+body {
+	background-image: url("https://i.imgsafe.org/43122886ff.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	padding: 2%;
 }
 
-
+form {
+	text-align: center;}
 
 p {
-padding:15% 15%;
-color: black;
-text-align: center;
-font-family: "courier new";
-font-size: 30px;
+	color: black;
+	text-align: center;
+	font-family: "courier new";
+	font-size: 28px;
 }
 
-
-
-li {
+/* li {
     float: left;
 }
 
@@ -63,42 +60,24 @@ li a {
 
 li a:hover {
     background-color: #111;
-}
+} */
 </style>
 </head>
 <body>
-
-<!-- 
-	<header>
-
-		<h1>Gotcha!</h1>
-		<h3>Get or Be Got</h3>
-
-
-	</header> -->
-
-
-	<br>
 	<p>
-		<b>Gotcha: Got or be Got.</b> <br> Players are assigned a target
-		(another player), an item, and a location. <br> Get points by
-		getting your target to hold the specified item at the specified
+		<b>Gotcha: Got or Get Got.</b> <br> Players are assigned a target
+		(another player),<br> an item, and a location. <br> Get points by
+		getting your target to hold that item<br> at that
 		location and posting the picture. <br> Win the game by being the
-		last player standing. <br>
-
+		last player standing.<br>
 	</p>
 	<p>
 	<form action="loginmethod" method="get" align = "middle">
-		<br> username <input type="text" align="center" name="username">
-		<br> password <input type="text" align="center" name="password">
-		<br> gotchaname <input type="text" align="center" name="Gotcha name">
+		<br>User Name: <input type="text" align="center" name="username"><br>
+		<br>Password: <input type="text" align="center" name="password"><br>
+		<br>Gotcha Name: <input type="text" align="center" name="Gotcha name"><br>
 		<br> <input type="submit" align="center" value="Log In">
-
 	</form>
 	</p>
-	
-	
-
 </body>
-
 </html>

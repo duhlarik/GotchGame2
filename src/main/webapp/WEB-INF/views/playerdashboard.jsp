@@ -2,9 +2,6 @@
 <%@ page session="true"%>
 
 <html>
-
-
-
 <head>
 <title>Gotcha Game</title>
 
@@ -31,7 +28,21 @@
 <style>
 body {
 	background-image:
-		url("http://www.recettes-de-cuisines.com/wp-content/plugins/wp-o-matic/cache/7b51d_photodune-2487584-white-wood-background-m.jpg")
+		url("http://www.recettes-de-cuisines.com/wp-content/plugins/wp-o-matic/cache/7b51d_photodune-2487584-white-wood-background-m.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	padding: 2%;
+}
+
+form {
+	text-align: center;}
+
+p {
+	color: black;
+	text-align: center;
+	font-family: "courier new";
+	font-size: 28px;
 }
 
 header, footer {
@@ -42,14 +53,6 @@ header, footer {
 	text-align: left;
 	font-family: "courier new";
 	font-size: 25px;
-}
-
-p {
-	padding: 15% 15%;
-	color: black;
-	text-align: center;
-	font-family: "courier new";
-	font-size: 30px;
 }
 
 ul {
@@ -80,66 +83,35 @@ li a:hover {
 </head>
 <body>
 
-
-	<!-- <header>
-
-<h1>Gotcha!</h1>
-<h3>Get or Be Got</h3>
-
-
-</header> -->
-
-
-	<form action="GameOverview" method="get" align="middle">
-		<input type="submit" align="center" value="Game Overview">
-
+	<form action="GameOverview" method="get">
+		<input type="submit" value="Game Overview"><br>
 	</form>
-	<br>
 
-	<form action="playerdashboard" method="get" align="middle">
-		<input type="submit" align="center" value="Player Dashboard">
-
+	<form action="playerdashboard" method="get">
+		<input type="submit" value="Player Dashboard"><br>
 	</form>
-	<br>
-
-	<form action="GotchaGamesCreateGame" method="get" align="middle">
-		<input type="submit" align="center" value="Create Game">
-
+	
+	<form action="GotchaGamesCreateGame" method="get">
+		<input type="submit" value="Create Game"><br>
 	</form>
-	<br>
 
 	<form action="StartGamePageTest" method="get" align="middle">
-		<input type="submit" align="center" value="Start Created Game">
-
+		<input type="submit" align="center" value="Start Created Game"><br>
 	</form>
-	<br>
 
 	<form action="ActiveGameShowAssignment" method="get" align="middle">
-		<input type="submit" align="center" value="Active Games">
-
+		<input type="submit" align="center" value="Active Games"><br>
 	</form>
-	<br>
+	
 
 	<form action="GameInvitationPage" method="get" align="middle">
-		<input type="submit" align="center" value="GameInvitationPage">
-
+		<input type="submit" align="center" value="GameInvitationPage"><br>
 	</form>
-
-	<br>
+	
 	<br>
 	<p>
 		"Life is more fun <br> if you play games" <br> <br>
 		Roald Dahl <br>
 	</p>
-
-
-
-
-
 </body>
-
 </html>
-
-
-
-

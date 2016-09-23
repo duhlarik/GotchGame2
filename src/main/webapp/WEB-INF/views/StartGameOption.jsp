@@ -4,9 +4,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-
-
-
 <head>
 	   <title>Gotcha Game</title>
 
@@ -23,24 +20,24 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/4309152fef.jpg")
-
-
+{background-image: url("https://i.imgsafe.org/4309152fef.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	padding: 2%;
 }
 
-
+form {
+	text-align: center;}
 
 p {
-padding:15% 15%;
-color: black;
-text-align: center;
-font-family: "courier new";
-font-size: 30px;
+	color: black;
+	text-align: center;
+	font-family: "courier new";
+	font-size: 28px;
 }
 
-
-
-li {
+/* li {
     float: left;
 }
 
@@ -55,35 +52,19 @@ li a {
 
 li a:hover {
     background-color: #111;
-}
+} */
 </style>
 </head>
 <body>
 
-
-<!-- <header>
-
-<h1>Gotcha!</h1>
-<h3>Start Game</h3>
-
-</header>
-
-</header> -->
-
-<h1>${StartGame} </h1>
-<form action= "StartGameButton" method ="get" align = "middle">
-<input type = "submit"  value="Start Game!">
+<p><b>${StartGame}</b></p>
+<form action= "StartGameButton" method ="get"><br>
+<input type = "submit"  value="Start Game!"><br><br>
 </form>
 <!-- <button onclick="addPlayer()">Accept Invitation</button>-->
 
-
-<form action="PrettyStart" method="get" align = "middle">
-<input type="submit" align="center" value="Home">
-
+<form action="PrettyStart" method="get"><br>
+<input type="submit" value="Home"><br>
 	</form>
-    
-
-
 </body>
-
 </html>

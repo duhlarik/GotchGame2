@@ -4,26 +4,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Gotcha Game</title>
 	<style>
 
-body
-{background-image: url("https://i.imgsafe.org/4309027e65.jpg")
-
-
+body {
+	background-image: url("https://i.imgsafe.org/4309027e65.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	padding: 2%;
 }
 
-
+form {
+	text-align: center;}
 
 p {
-padding:15% 15%;
-color: black;
-text-align: center;
-font-family: "courier new";
-font-size: 30px;
+	color: black;
+	text-align: center;
+	font-family: "courier new";
+	font-size: 28px;
 }
-
-
 
 li {
     float: left;
@@ -42,27 +42,18 @@ li a:hover {
     background-color: #111;
 }
 </style>
-
 </head>
-
 	<br>
+	<p><b>Congratulations!</b><br></p>  <p>Click the Gotcha Button to confirm your Gotcha!<br>
+	Remember, your friends and Gotcha Creators love you because<br> you never
+	click Gotcha! unless you really got a Gotcha!</p><br>
 	
-	<h1>Congratulations.  Click Gotcha Button to confirm your Gotcha! 
-	Remember, your friends and Gotcha Creators love you because you never
-	click Gotcha! unless you really got a Gotcha!
-
-	</h1>
-	</form>	
-	
-	
-	<form action= "GotchaShuffleAssignments" method ="get" align = "middle">
-<input type = "submit"  value="GOTCHA!">
-</form>
-<form action="PrettyStart" method="get" align = "middle">
-<input type="submit" align="center" value="Home">
+<form action= "GotchaShuffleAssignments" method ="get"><br>
+<input type = "submit"  value="GOTCHA!"><br><br>
 	</form>
-  	
-	
+
+<form action="PrettyStart" method="get"><br>
+<input type="submit" value="Home"><br>
+	</form>
 </body>
 </html>
-

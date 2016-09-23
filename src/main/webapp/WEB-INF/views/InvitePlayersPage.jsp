@@ -5,9 +5,6 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-
-
-
 <head>
 <title>Gotcha Game</title>
 
@@ -33,15 +30,21 @@
 
 <style>
 body {
-	background-image: url("https://i.imgsafe.org/4308fc76a4.jpg")
+	background-image: url("https://i.imgsafe.org/4308fc76a4.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	padding: 2%;
 }
 
+form {
+	text-align: center;}
+
 p {
-	padding: 15% 15%;
 	color: black;
 	text-align: center;
 	font-family: "courier new";
-	font-size: 30px;
+	font-size: 28px;
 }
 
 li {
@@ -61,22 +64,14 @@ li a:hover {
 	background-color: #111;
 }
 </style>
-
-<!-- </header> -->
 <p>
-	<br> <br>
-<form action="AddPlayerToPlayersTableTest" method="get" align="middle">
-	Player 1 Username:<input type="text" name="player1"> <input
-		type="submit" value="Submit to invite player">
+<form action="AddPlayerToPlayersTableTest" method="get">
+	Player 1 User Name: <input type="text" name="player1"><br><br>
+	<input type="submit" value="Submit to invite player"><br><br>
 </form>
-<br>
-
-
-<form action="PrettyStart" method="get" align="middle">
-	<input type="submit" align="center"
-		value="Finished Inviting? Click Here!">
+<form action="PrettyStart" method="get">
+	<input type="submit" value="Finished Inviting? Click Here!">
 </form>
 </p>
 </body>
-
 </html>

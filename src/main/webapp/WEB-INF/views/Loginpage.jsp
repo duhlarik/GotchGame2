@@ -2,9 +2,6 @@
 <%@ page session="true"%>
 
 <html>
-
-
-
 <head>
 <title>Gotcha Game</title>
 
@@ -30,18 +27,24 @@
 
 <style>
 body {
-	background-image: url("https://i.imgsafe.org/43122886ff.jpg")
+	background-image: url("https://i.imgsafe.org/43122886ff.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	padding: 2%;
 }
 
+form {
+	text-align: center;}
+
 p {
-	padding: 15% 15%;
 	color: black;
 	text-align: center;
 	font-family: "courier new";
-	font-size: 30px;
+	font-size: 28px;
 }
 
-li {
+/* li {
 	float: left;
 }
 
@@ -56,64 +59,45 @@ li a {
 
 li a:hover {
 	background-color: #111;
+} */
+
+.img-responsive {
+	position: relative;
+	width: 100%;
 }
+
+img {
+	width: 100%
+	}
 </style>
 </head>
 <body>
-
-
-	<!-- <header>
-
-		<h1>Gotcha!</h1>
-		<h3>Get or Be Got</h3>
-
-
-	</header>
- -->
-
-	
-	<p>
-		<b>Gotcha: Get or Get Got.</b> <br> Players are assigned a target
-		(another player), an item, and a location. <br>
-		<br> Get points by getting your target to hold the specified item
-		at the specified location and posting the picture. <br>
-		<br> Win the game by being the last player standing. <br>
-
-	<form action="validatelogin" method="get" align = "middle">
-		email <input type="text"  name="username">
-	 password <input type="text" align="center" name="password">
-	<input type="submit" align="center" value="Log In">
-
+	<p><b>Gotcha: Get or Get Got.</b> <br> Players are assigned a target
+		(another player),<br> an item, and a location. <br>
+		Get points by getting your target to hold that item<br>
+		at that location and posting the picture. <br>
+		Win the game by being the last player standing.
+	<form action="validatelogin" method="get">
+		Email: <input type="text"  name="username"><br><br>
+	 Password: <input type="text" name="password"><br><br>
+	 <!-- <a href = "Log In">
+	 <img src = "src/main/resources/ButtonLOGIN.png"></a> -->
+	<input type="submit" value="Log In">
 	</form>
-
-
-
 	<%
 		String userName = request.getParameter("username");
 		//I am setting the userName as sessionUserName
 		request.getSession().setAttribute("sessionUserName", userName);
-
 		//when I call this I will use the command <%= session.getAttribute( "sessionUserName" )
 	%>
-
-
-
-	<p>
-		<b> New User? Click below to create an account.
-			<form action="NewUser" method="get" align="middle">
-				<input type="submit" align="center" value="New User">
+	<p><b>New User? Click below to create an account.</b></p>
+			<form action="NewUser" method="get">
+				<input type="submit" value="New User">
 			</form>
-	</p>
-	<b> Click below to read our privacy policy.</b>
-
-	<form action="privacy policy" method="get" align="middle">
-		<input type="submit" align="center" value="Privacy Policy">
-
+	<p> Click below to read our privacy policy.</p>
+	<form action="privacy policy" method="get">
+		<input type="submit" value="Privacy Policy">
 	</form>
 	</p>
-
-
-
 </body>
-
 </html>
