@@ -24,7 +24,7 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/2fd91412db.png")
+{background-image: url("https://i.imgsafe.org/43090ea775.jpg")
 
 
 }
@@ -32,7 +32,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -62,7 +62,7 @@ li a:hover {
 <body>
 
 
-<header>
+<!-- <header>
 
 <h1>Gotcha!</h1>
 <h3>Game Invitations</h3>
@@ -70,30 +70,21 @@ li a:hover {
 
 </header>
 
-</header>
+</header> -->
 <p>
 <br>
 <br>
 You have been invited to a game of Gotcha!
-<br>
-<form action= "AcceptGame" method ="get">
-
-
-
+<form align="middle" action= "AcceptGame" method ="get">
 <input type = "submit"  value="Accept Game">
-
 </form>
+<br>
+<form align="middle" action="PrettyStart" method="get">
+<input type="submit" align="center" value="Home">
+	</form>
 </p>
 
-<ul>
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
 
-	</form></li>
-
-
-</ul>
 
 </body>
 

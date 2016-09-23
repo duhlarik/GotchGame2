@@ -32,7 +32,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -75,25 +75,20 @@ li a:hover {
 <p>
 <br>
 <br>
-<br>
-<form action= "gamecreation" method ="get">
-Enter an awesome Game Name:<input type ="text" name="gamename">
-<br>
-<br>
+Enter an awesome Game Name:<br>
+<form action= "gamecreation" method ="get" align = "middle">
+<input type ="text" name="gamename">
 <input type = "submit"  value="Submit Game">
-
+</form>
+<br>
+<form action="PrettyStart" method="get" align = "middle">
+<input type="submit" align="center" value="Home">
 </form>
 </p>
-<ul>
 
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
 
-	</form></li>
     
 
-</ul>
 </body>
 
 </html>

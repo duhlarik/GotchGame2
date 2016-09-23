@@ -29,7 +29,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -66,7 +66,6 @@ li a:hover {
 
 
 </header> -->
-<ul>
 
 <li><form action="GameOverview" method="get">
 		<br> 
@@ -104,7 +103,6 @@ li a:hover {
 	
 
 
-</ul>
 
 <p>
 Last Updated: September 2016

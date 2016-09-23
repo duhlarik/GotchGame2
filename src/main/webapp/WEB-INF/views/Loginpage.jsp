@@ -28,41 +28,34 @@
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	crossorigin="anonymous"></script>
 
-	<style>
-
-body
-{background-image: url("https://i.imgsafe.org/43122886ff.jpg")
-
-
+<style>
+body {
+	background-image: url("https://i.imgsafe.org/43122886ff.jpg")
 }
-
-
 
 p {
-
-color: black;
-text-align: center;
-font-family: "courier new";
-font-size: 30px;
+	padding: 15% 15%;
+	color: black;
+	text-align: center;
+	font-family: "courier new";
+	font-size: 30px;
 }
 
-
-
 li {
-    float: left;
+	float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "courier new";
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: "courier new";
 }
 
 li a:hover {
-    background-color: #111;
+	background-color: #111;
 }
 </style>
 </head>
@@ -78,58 +71,47 @@ li a:hover {
 	</header>
  -->
 
-	<br>
-	<br>
-	<br>
-	<br>
+	
 	<p>
-		<b>Gotcha: Got or be Got.</b> <br> Players are assigned a target
-		(another player), an item, and a location. <br> Get points by
-		getting your target to hold the specified item at the specified
-		location and posting the picture. <br> Win the game by being the
-		last player standing. <br>
+		<b>Gotcha: Get or Get Got.</b> <br> Players are assigned a target
+		(another player), an item, and a location. <br>
+		<br> Get points by getting your target to hold the specified item
+		at the specified location and posting the picture. <br>
+		<br> Win the game by being the last player standing. <br>
 
-	</p>
-	<p>
-	<form action="validatelogin" method="get">
-		<br> email <input type="text" align="center" name="username">
-		<br> password <input type="text" align="center" name="password">
-		<br> <input type="submit" align="center" value="Log In">
+	<form action="validatelogin" method="get" align = "middle">
+		email <input type="text"  name="username">
+	 password <input type="text" align="center" name="password">
+	<input type="submit" align="center" value="Log In">
 
 	</form>
-	
-	
-	
+
+
+
 	<%
-   String userName = request.getParameter( "username" );
-   //I am setting the userName as sessionUserName
-   	request.getSession().setAttribute("sessionUserName", userName);
+		String userName = request.getParameter("username");
+		//I am setting the userName as sessionUserName
+		request.getSession().setAttribute("sessionUserName", userName);
 
-   //when I call this I will use the command <%= session.getAttribute( "sessionUserName" ) %>
-   
+		//when I call this I will use the command <%= session.getAttribute( "sessionUserName" )
+	%>
 
-	
+
+
 	<p>
-	<b> New User?  Click below to create an account.</b>
-	<form action="NewUser" method="get">
-		
-		<br><input type="submit" align="center" value="New User">
-</p>
-	</form>	
-	 <b> Click below to read our privacy policy.</b>
-			
-			<form action="privacy policy" method="get">
-		
-		<br><input type="submit" align="center" value="Privacy Policy">
-</p>
-	</form>	
-		</form>	
-	<p>
-	
-	
-
-
+		<b> New User? Click below to create an account.
+			<form action="NewUser" method="get" align="middle">
+				<input type="submit" align="center" value="New User">
+			</form>
 	</p>
+	<b> Click below to read our privacy policy.</b>
+
+	<form action="privacy policy" method="get" align="middle">
+		<input type="submit" align="center" value="Privacy Policy">
+
+	</form>
+	</p>
+
 
 
 </body>

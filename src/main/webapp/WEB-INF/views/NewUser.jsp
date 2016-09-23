@@ -39,7 +39,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -79,9 +79,6 @@ li a:hover {
 
 
 	<br>
-	<br>
-	<br>
-	<br>
 	<p>
 		<b>Gotcha: Got or be Got.</b> <br> Players are assigned a target
 		(another player), an item, and a location. <br> Get points by
@@ -91,16 +88,14 @@ li a:hover {
 
 	</p>
 	<p>
-	<form action="loginmethod" method="get">
+	<form action="loginmethod" method="get" align = "middle">
 		<br> username <input type="text" align="center" name="username">
 		<br> password <input type="text" align="center" name="password">
 		<br> gotchaname <input type="text" align="center" name="Gotcha name">
 		<br> <input type="submit" align="center" value="Log In">
 
 	</form>
-	
-
-	<p>
+	</p>
 	
 	
 

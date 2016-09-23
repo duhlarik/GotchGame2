@@ -31,7 +31,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -60,14 +60,14 @@ li a:hover {
 </head>
 <body>
 
-
+<!-- 
 <header>
 
 <h1>Gotcha!</h1>
 <h3>Game Invitations</h3>
 
 
-<!-- </header>
+</header>
 <ul>
 
 
@@ -76,16 +76,13 @@ li a:hover {
 <h1> You have accepted a game invitation!</h1>
 <h3>You will see your assignment on the "Active Games"" Page when the Game Maker Starts the Game!</h3>
 
-<ul>
 
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
+<form action="PrettyStart" method="get" align = "middle">
+<input type="submit" align="center" value="Home">
 
-	</form></li>
+	</form>
     
 
-</ul>
 
 
 </body>

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ page session="true"%>
+	pageEncoding="UTF-8"%>
+<%@ page session="true"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <title>Gotcha Game Redirect</title>
@@ -42,6 +42,7 @@ header, footer {
 }
 
 p {
+	padding: 15% 15%;
 	color: black;
 	text-align: center;
 	font-family: "courier new";
@@ -75,25 +76,21 @@ li a:hover {
 </style>
 </head>
 <body>
-<p>
-		<br> <br> <br> <br> <br> <br> <br>
-		You must log in using Instagram to play GotchaGame. Please log in
-		here: <br> <br> </p>
-		
-<form action="playerdashboard" method="get">
-		<br> username <input type="text" align="center" name="username">
-		<br> password <input type="text" align="center" name="password">
-		<br> <input type="submit" align="center" value="Login">
+	<p>
+		<br> <br> <br> Please log in here:
+	</p>
+
+	<form action="playerdashboard" method="get" align="middle">
+		username <input type="text" align="center" name="username">
+		password <input type="text" align="center" name="password"> <input
+			type="submit" align="center" value="Login">
 
 	</form>
-	<p>
-		 <b>New User? Click below to create an
-			account.</b>
-			
-			<form action="newuser copy" method="get">
-		
-		<br><input type="submit" align="center" value="New User">
-</p>
-	</form>	
+	<p>New User? Click below to create an account.
+	<form action="newuser copy" method="get" align="middle">
+		<input type="submit" align="center" value="New User">
+	</form>
+	</p>
+
 </body>
 </html>

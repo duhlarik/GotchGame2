@@ -30,7 +30,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -80,23 +80,19 @@ li a:hover {
 <h3>${location} </h3>
 <h1>${nullmessage} </h1>
 
-<form action= "GotchaGoToUploadPhotos" method ="get">
+<form action= "GotchaGoToUploadPhotos" method ="get" align = "middle">
 <input type = "submit"  value="GOTCHA!">
-
 </form>
+<br>
 
-
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
-
-	</form></li>
+<form action="PrettyStart" method="get" align = "middle">
+<input type="submit" align="center" value="Home">
+</form>
 	
-<li><form action="Outdoor2" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Photos">
-
-	</form></li>	
+<br> 	
+<form action="Outdoor2" method="get" align = "middle">
+<input type="submit" align="center" value="Photos">
+</form>	
 </p>
 
 </body>

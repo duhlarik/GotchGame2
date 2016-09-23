@@ -8,7 +8,7 @@
 	<style>
 
 body
-{background-image: url("https://i.imgsafe.org/2fd91412db.png")
+{background-image: url("https://i.imgsafe.org/4309027e65.jpg")
 
 
 }
@@ -16,7 +16,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -48,30 +48,21 @@ li a:hover {
 	<br>
 	
 	<h1>Congratulations.  Click Gotcha Button to confirm your Gotcha! 
-	Remember, your friends and Gotcha Creators love because you never
+	Remember, your friends and Gotcha Creators love you because you never
 	click Gotcha! unless you really got a Gotcha!
 
 	</h1>
 	</form>	
 	
 	
-	<form action= "GotchaShuffleAssignments" method ="get">
+	<form action= "GotchaShuffleAssignments" method ="get" align = "middle">
 <input type = "submit"  value="GOTCHA!">
-
 </form>
-	<ul>
-
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
-
-	</form></li>
-    
-
-</ul>
-	
+<form action="PrettyStart" method="get" align = "middle">
+<input type="submit" align="center" value="Home">
+	</form>
+  	
 	
 </body>
 </html>
 
-</html>

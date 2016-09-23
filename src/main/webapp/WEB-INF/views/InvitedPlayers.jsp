@@ -31,7 +31,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -61,42 +61,37 @@ li a:hover {
 <body>
 
 
-<header>
+<!-- <header>
 
 <h1>Gotcha!</h1>
 <h3>Game Invitations</h3>
 
 
-<!-- </header>
+</header>
 
 
 </header> -->
 <h1> ${gameName}   </h1>
 <h1> ${invitedPlayers [1]} </h1><br>
-<form action= "addPlayer" method ="get">
+<form action= "addPlayer" method ="get" align = "middle">
 <input type = "submit"  value="Accept invitation!">
 </form>
 
 <!--  <button onclick="updatePlayerToActive">Accept Invitation</button>-->
 
 <h1> ${invitedPlayers [2]} </h1><br>
-<form action= "addPlayer" method ="get">
-
+<form action= "addPlayer" method ="get" align= "middle">
 <input type = "submit"  value="Accept invitation!">
 </form>
 <!-- <button onclick="addPlayer()">Accept Invitation</button>-->
 
 
+<br>
+<form action="PrettyStart" method="get" align = "middle">
+ <input type="submit" align="center" value="Home">
 
-<ul>
-
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
-
-	</form></li>
+	</form>
     
-</ul>
 
 </body>
 

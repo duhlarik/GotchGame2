@@ -30,7 +30,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -69,7 +69,7 @@ li a:hover {
 </header> -->
 
 
-</header>
+<!-- </header> -->
 <p>
 
 <h1>${targetremoved}</h1>
@@ -77,21 +77,18 @@ li a:hover {
 <h3>${winner}</h3>
 
 
-<ul>
 
 
 
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
+<form action="PrettyStart" method="get" align = "middle">
+<input type="submit" align="middle" value="Home">
 
-	</form></li>
+	</form>
     
 
 
 
 
-</ul>
 </p>
 
 </body>

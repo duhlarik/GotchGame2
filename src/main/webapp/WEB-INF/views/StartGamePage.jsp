@@ -31,7 +31,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -73,21 +73,17 @@ li a:hover {
 </header> -->
 
 <h1>${StartGame} </h1>
-<form action= "StartGameButton" method ="get">
-
+<form action= "StartGameButton" method ="get" align = "middle">
 <input type = "submit"  value="Start Game!">
 </form>
 <!-- <button onclick="addPlayer()">Accept Invitation</button>-->
-<ul>
 
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
+<form action="PrettyStart" method="get">
+<input type="submit" align="center" value="Home">
 
-	</form></li>
+	</form>
     
 
-</ul>
 
 
 </body>

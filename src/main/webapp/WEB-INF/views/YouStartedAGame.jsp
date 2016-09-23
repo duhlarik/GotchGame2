@@ -30,7 +30,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -60,16 +60,15 @@ li a:hover {
 <body>
 
 
-<header>
+<!-- <header>
 
 <h1>Gotcha!</h1>
 <h3>Game Invitations</h3>
 
 
-</header>
+</header> -->
 
 
-<ul>
 
 <li><form action="PrettyStart" method="get">
 		<br> 
@@ -80,22 +79,18 @@ li a:hover {
 
 
 
-</ul>
 
 <%-- </header>
 <h1>You started your game ${gametostart}! </h1>
 <h3>You will see your assignment on the "Active Games" Page.  Let the Gotchaing begin!</h3>
 </header> --%>
-<ul>
 
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
+<form action="PrettyStart" method="get" align = "middle">
+<input type="submit" align="center" value="Home">
 
-	</form></li>
+	</form>
     
 
-</ul>
 
 
 </body>

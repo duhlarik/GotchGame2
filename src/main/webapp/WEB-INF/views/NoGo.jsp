@@ -30,7 +30,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -75,14 +75,10 @@ li a:hover {
 
 <h1>${nullmessage} </h1>
 
+<form action="PrettyStart" method="get" align = "middle">
+<input type="submit" align="center" value="Home">
 
-
-
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
-
-	</form></li>
+	</form>
 </p>
 
 </body>

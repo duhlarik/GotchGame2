@@ -30,7 +30,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -70,23 +70,19 @@ li a:hover {
 
 
 
-</header>
-
+<!-- </header>
+ -->
 
 <h1>No games to start.  Want to get your Gotcha On?  Go ahead and create a new game!</h1>
 
 
+
+
+<form action="PrettyStart" method="get" align = "middle">
+<input type="submit" align="center" value="Home">
+</form>
+    
 </body>
 
-<ul>
-
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
-
-	</form></li>
-    
-
-</ul>
 
 </html>

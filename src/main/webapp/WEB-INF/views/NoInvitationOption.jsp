@@ -30,7 +30,7 @@ body
 
 
 p {
-
+padding:15% 15%;
 color: black;
 text-align: center;
 font-family: "courier new";
@@ -60,13 +60,13 @@ li a:hover {
 <body>
 
 
-<header>
+<!-- <header>
 
 <h1>Gotcha!</h1>
 <h3>Game Invitations</h3>
 
 
-<!-- </header>
+</header>
 
 
 
@@ -74,21 +74,18 @@ li a:hover {
 </header> -->
 <h1>You have no pending Invitations. Why not start a new Game?</h1>
 
-<form action= "GotchaGamesCreateGame" method ="get">
+<form action= "GotchaGamesCreateGame" method ="get" align = "middle">
 <input type = "submit"  value="Create a Game!">
 </form>
 
 <!--  <button onclick="updatePlayerToActive">Accept Invitation</button>-->
-<ul>
 
-<li><form action="PrettyStart" method="get">
-		<br> 
-		<br> <input type="submit" align="center" value="Home">
+<form action="PrettyStart" method="get" align = "middle">
+<input type="submit" align="center" value="Home">
 
-	</form></li>
+	</form>
     
 
-</ul>
 
 </body>
 

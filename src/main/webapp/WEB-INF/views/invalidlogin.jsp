@@ -28,48 +28,41 @@
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	crossorigin="anonymous"></script>
 
-	<style>
-
-body
-{background-image: url("https://i.imgsafe.org/43122886ff.jpg")
-
-
+<style>
+body {
+	background-image: url("https://i.imgsafe.org/43122886ff.jpg")
 }
-
-
 
 p {
-
-color: black;
-text-align: center;
-font-family: "courier new";
-font-size: 30px;
+	padding: 15% 15%;
+	color: black;
+	text-align: center;
+	font-family: "courier new";
+	font-size: 30px;
 }
 
-
-
 li {
-    float: left;
+	float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "courier new";
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: "courier new";
 }
 
 li a:hover {
-    background-color: #111;
+	background-color: #111;
 }
 </style>
 </head>
 <body>
 
 
-<!-- 	<header>
+	<!-- 	<header>
 
 		<h1>Gotcha!</h1>
 		<h3>Get or Be Got</h3>
@@ -83,39 +76,32 @@ li a:hover {
 	<br>
 	<br>
 	<p>
-		<b>The username or password was incorrect.  Please try again if you have an account. <br>
-
-	</p>
-	<p>
-	<form action="validatelogin" method="get">
-		<br> email <input type="text" align="center" name="username">
-		<br> password <input type="text" align="center" name="password">
-		<br> <input type="submit" align="center" value="Log In">
-
+		<b>The username or password was incorrect. Please try again if you
+			have an account. <br>
+			<form action="validatelogin" method="get" align = "middle">
+				<br> email <input type="text" align="center" name="username">
+				<br> password <input type="text" align="center" name="password">
+				<br> <input type="submit" align="center" value="Log In">
+	
 	</form>
-	
-	
-	
-	<%
-   String userName = request.getParameter( "username" );
-   //I am setting the userName as sessionUserName
-   	request.getSession().setAttribute("sessionUserName", userName);
-
-   //when I call this I will use the command <%= session.getAttribute( "sessionUserName" ) %>
-   
-
-	
-	<p>
-	<b> New User?  Click below to create an account.</b>
-	<form action="NewUser" method="get">
-		
-		<br><input type="submit" align="center" value="New User">
 </p>
-	</form>	
-	 
-	
 
 
+	<%
+		String userName = request.getParameter("username");
+		//I am setting the userName as sessionUserName
+		request.getSession().setAttribute("sessionUserName", userName);
+
+		//when I call this I will use the command <%= session.getAttribute( "sessionUserName" )
+	%>
+
+
+
+	<p>
+		<b> New User? Click below to create an account.</b>
+	<form action="NewUser" method="get" align = "middle">
+		<input type="submit" align="center" value="New User">
+	</form>
 	</p>
 
 
